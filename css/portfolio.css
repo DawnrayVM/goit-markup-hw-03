@@ -1,0 +1,13 @@
+body {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+.list-title {
+  color: var(--primary-text-color);
+}
+
+.list-text {
+  color: var(--secondary-text-color);
+}
