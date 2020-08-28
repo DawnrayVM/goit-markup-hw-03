@@ -16,6 +16,48 @@
   --secondary-bg-color: #2f303a;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.page-header {
+  background-color: var(--pure-white-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  /*outline: 2px solid tomato;*/
+}
+.justify-center {
+  align-items: center;
+  justify-content: flex-end;
+}
+/* шапка странички*/
+.main-nav {
+  margin-right: auto;
+}
+
 .logo {
   text-decoration: none;
   color: var(--primary-text-color);
@@ -27,15 +69,19 @@
 .accent {
   color: var(--main-accent);
 }
-
+.site-nav {
+  margin-left: 93px;
+}
 .site-nav .link {
   text-decoration: none;
   color: var(--primary-text-color);
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
+  margin: 0px;
 }
-
+.main-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--main-accent);
@@ -44,14 +90,8 @@
 .site-nav .current {
   color: var(--main-accent);
 }
-.list {
-  list-style: none;
-}
-.header-contacts {
-  list-style: none;
-}
 
-.header-contacts .item {
+.header-contacts .link {
   text-decoration: none;
   font-family: Roboto;
   font-weight: 500;
@@ -59,17 +99,25 @@
   color: var(--secondary-text-color);
 }
 
-.header-contacts .item:hover,
-.header-contacts .item:focus {
+.header-contacts .link:hover,
+.header-contacts .link:focus {
   color: var(--main-accent);
   text-decoration: underline;
 }
+
+.header-contacts .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* футер */
 
 .footer {
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   text-decoration: none;
@@ -84,14 +132,19 @@
   font-style: normal;
   color: var(--pure-white-color);
   letter-spacing: 0.03em;
+  margin-top: 20px;
 }
-
+.adress-text {
+  display: block;
+}
 .address-item {
+  display: block;
   text-decoration: none;
   font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
   color: var(--footer-text-color);
+  margin-top: 9px;
 }
 
 .address-item:hover,

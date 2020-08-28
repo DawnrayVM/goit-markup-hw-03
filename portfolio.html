@@ -10,23 +10,25 @@
     <title>Web Studio - Портфолио</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
-        <ul class="site-nav list">
-          <li><a href="./" class="link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-          <li><a href="./" class="link">Контакты</a></li>
+    <header class="page-header flexbox">
+      <div class="container flexbox justify-center">
+        <nav class="main-nav flexbox justify-center">
+          <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
+          <ul class="site-nav flexbox list">
+            <li class="item"><a href="./" class="link">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+            <li class="item"><a href="./" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contacts flexbox list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="header-contacts">
-        <li>
-          <a href="mailto:info@devstudio.com" class="item">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="item">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <h1>Наши работы</h1>
     <div>
@@ -84,12 +86,14 @@
       </li>
     </ul>
     <footer class="footer">
-      <a href="./" class="footer-logo"><span class="accent">Web</span>Studio</a>
-      <address class="address">
-        г. Киев, пр-т Леси Украинки, 26<br />
-        <a href="mailto:info@example.com" class="address-item">info@example.com</a><br />
-        <a href="tel:+380991111111" class="address-item">+380991111111</a>
-      </address>
+      <div class="container">
+        <a href="./" class="footer-logo"><span class="accent">Web</span>Studio</a>
+        <address class="address">
+          <span class="adress-text">г. Киев, пр-т Леси Украинки, 26</span>
+          <a href="mailto:info@example.com" class="address-item">info@example.com</a>
+          <a href="tel:+380991111111" class="address-item">+380991111111</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
