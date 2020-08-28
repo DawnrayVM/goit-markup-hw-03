@@ -38,11 +38,12 @@ p {
   background-color: var(--pure-white-color);
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .container {
   width: 1200px;
-  padding: 0px;
+  padding: 0px 15px 0 15px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: auto;
